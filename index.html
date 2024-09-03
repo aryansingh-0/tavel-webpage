@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="circle">
+
+    </div>
+    <nav>
+
+        <div class="nav">
+            <div class="logo">
+                <h1>Travel</h1>
+            </div>
+            <div class="navigation">
+                <a class="active" href="#">Home</a>
+                <a href="#popular-destination">Discover</a>
+
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="btn">
+                <button>Contact Now</button>
+            </div>
+            <div class="menu-toggle-btn" onclick="shownav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </nav>
+    <section id="herosection">
+
+        <div class="herosection">
+            <div class="hero-left">
+                <div class="hero-text">
+                    <h1><span>LIVE YOUR</span> <br>ADVENTURE</h1>
+                    <p>Don't wait until tomorrow, discover your <br>adventure now and feel the sensation <br>of
+                        closeness to
+                        nature
+                        around you </p>
+                </div>
+                <div class="hero-search">
+                    <div id="hero-search">
+                        <div class="search-location">
+                            <div class="location-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="location">
+                                <div id="location">
+                                    <span>Location</span>
+                                </div>
+                                <div id="location-input"> <input type="location" placeholder="Enter your location">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-location">
+                            <div class="location-icon"><i class="fa-regular fa-calendar-days"></i></div>
+                            <div class="location">
+                                <div id="location">
+                                    <span>Date</span>
+                                </div>
+                                <div id="location-input">
+                                    <input type="date" placeholder="Enter date here ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-btn">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero-right">
+                <div class="hero-image">
+                    <div id="hero-image">
+                        <img src="./assets/2.png" alt="image">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="popular-destination">
+        <div class="ribbon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="destination-title">
+            <div id="destination-title">
+                <h1>Find<span> Popular </span><br> destinations</h1>
+            </div>
+            <div class="destination-nav">
+                <div class="move-forward" onclick="moveback()"> <i class="fa-solid fa-arrow-left-long"></i>
+
+                </div>
+                <div onclick="moveahead()" class="move-back">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+        </div>
+        <div class="destination-card-box">
+
+            <div id="destination-card-box">
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <div id="card-image">
+                                <div class="rating"><i class="fa-solid fa-star"></i><span>5.4</span></div>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Serau Titanic</h3>
+                            <p>Lucknow,UP</p>
+                        </div>
+                        <div class="card-footer">
+                            <div id="card-footer-left">
+                                <div class="card-price"> <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="card-per-person"><span>/person</span></div>
+
+                            </div>
+                            <div id="card-footer-right">
+                                <button>Book</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <div id="card-image">
+                                <div class="rating"><i class="fa-solid fa-star"></i><span>5.4</span></div>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Serau Titanic</h3>
+                            <p>Lucknow,UP</p>
+                        </div>
+                        <div class="card-footer">
+                            <div id="card-footer-left">
+                                <div class="card-price"> <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="card-per-person"><span>/person</span></div>
+
+                            </div>
+                            <div id="card-footer-right">
+                                <button>Book</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <div id="card-image">
+                                <div class="rating"><i class="fa-solid fa-star"></i><span>5.4</span></div>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Serau Titanic</h3>
+                            <p>Lucknow,UP</p>
+                        </div>
+                        <div class="card-footer">
+                            <div id="card-footer-left">
+                                <div class="card-price"> <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="card-per-person"><span>/person</span></div>
+
+                            </div>
+                            <div id="card-footer-right">
+                                <button>Book</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <div id="card-image">
+                                <div class="rating"><i class="fa-solid fa-star"></i><span>5.4</span></div>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Serau Titanic</h3>
+                            <p>Lucknow,UP</p>
+                        </div>
+                        <div class="card-footer">
+                            <div id="card-footer-left">
+                                <div class="card-price"> <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="card-per-person"><span>/person</span></div>
+
+                            </div>
+                            <div id="card-footer-right">
+                                <button>Book</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <div id="card-image">
+                                <div class="rating"><i class="fa-solid fa-star"></i><span>5.4</span></div>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Serau Titanic</h3>
+                            <p>Lucknow,UP</p>
+                        </div>
+                        <div class="card-footer">
+                            <div id="card-footer-left">
+                                <div class="card-price"> <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="card-per-person"><span>/person</span></div>
+
+                            </div>
+                            <div id="card-footer-right">
+                                <button>Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="last-section">
+        <div class="ribbon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="quotes">
+            <h1>Start your new <span>adventrure</span><br>around the world
+
+            </h1>
+            <p>There are still many amazing destination <br>scattered around the world,you should try <br>to visit all
+                of them.</p>
+        </div>
+
+    </section>
+    <section>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
